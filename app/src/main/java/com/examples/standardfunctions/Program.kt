@@ -72,11 +72,17 @@ val personDetailsPrinter = { person: Person ->
     println("${person.name} ${person.age} ${person.profession} ${person.friends}")
 }
 
+val personDetailsPrinter2 = fun(person: Person) {
+    println("${person.name} ${person.age} ${person.profession} ${person.friends}")
+}
+
 fun Person.print() {
     println("$name $age $profession $friends")
 }
 
 fun Person.printExpression(): Unit = println("$name $age $profession $friends")
+
+val personDetailsPrinter3 = fun Person.() = println("$name $age $profession $friends")
 
 // A function that returns a function
 fun getPersonPrinter(): (Person) -> Unit {
