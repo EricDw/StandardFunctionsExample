@@ -472,7 +472,7 @@ fun putItAllTogether() {
         return result
     }
 
-    // Look at everything that is happening here in just 9 lines of code!
+    // Look at everything that is happening here in just 10 lines of code!
     fun girlsHaveTheSameLanguageSkillSetsExpression(
         maybePurl: Purl? = buildStockPurl(),
         maybeLacy: Lacy? = buildStockLacy()
